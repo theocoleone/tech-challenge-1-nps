@@ -4,7 +4,7 @@
 ================================================================================
 
 Autor: Theo Coleone de Camargo
-Curso: Pós Tech AI Scientist - FIAP
+Curso: Pós Graduação - AI Scientist - FIAP
 
 ================================================================================
 1. OBJETIVO DO PROJETO
@@ -38,7 +38,7 @@ agir de forma proativa para melhorar a experiência?
 2.2 Por que o NPS é importante para um e-commerce?
 --------------------------------------------------------------------------------
 - Representa a satisfação e lealdade do cliente
-- Métrica simples e amplamente utilizada no mercado
+- Métrica simples e amplamente utilizada no mercado (possibilita benchmarks)
 - Captura a percepção geral da experiência
 - Classifica os clientes em promotores, neutros e detratores
 - Funciona como um indicador estratégico/termômetro
@@ -51,13 +51,14 @@ agir de forma proativa para melhorar a experiência?
 - Pricing: entender impacto de descontos e frete na satisfação
 - Produto: melhorias baseadas em feedback real
 - UX / Plataforma: experiência digital alinhada à expectativa
+- ETC
 
 2.4 Impacto do NPS no negócio
 --------------------------------------------------------------------------------
 Recompra:
   - Clientes promotores tendem a comprar mais vezes
   - Detratores dificilmente retornam
-  - NPS alto → maior LTV (Lifetime Value)
+  - NPS alto → maior Lifetime Value (LTV = receita que o cliente gera durante todo relacionamento)
 
 Boca a boca:
   - Promotores recomendam espontaneamente
@@ -67,12 +68,12 @@ Boca a boca:
 
 Market Share:
   - Empresas com NPS alto crescem mais rápido
-  - Mais clientes satisfeitos → mais indicações → menor CAC
+  - Mais clientes satisfeitos → mais indicações → menor Custo de Aquisição de Cliente (CAC)
   - NPS alto pode gerar crescimento orgânico e vantagem competitiva sustentável
 
 2.5 Indicadores complementares
 --------------------------------------------------------------------------------
-O NPS sozinho não basta:
+O NPS sozinho não basta, uma vez que ele:
   - Não captura toda a jornada do cliente
   - Baixa representatividade (nem todos respondem)
   - Excesso de simplificação (resume a experiência em uma nota)
@@ -97,7 +98,7 @@ A variável nps_score (nota de 0 a 10).
 
 3.3 Em que momento da jornada essa informação é coletada?
 --------------------------------------------------------------------------------
-O NPS é coletado após o encerramento da jornada de compra (pós-entrega).
+O NPS é coletado após o encerramento da jornada de compra.
 Isso limita a capacidade de antecipar problemas, justificando a necessidade
 de um modelo preditivo.
 
@@ -168,7 +169,7 @@ b) O que mais gera detratores?
 
 c) Existe algum "ponto de ruptura"?
    → Sim. Identificamos o valor exato de cada variável onde o NPS sofre a
-     maior queda (ex: a partir de X dias de atraso, a satisfação despenca)
+     maior queda (ex: a partir de 1 dia de atraso, a satisfação despenca)
    → Útil para definir SLAs e alertas operacionais
 
 d) Que tipo de cliente tende a ter NPS mais alto ou mais baixo?
@@ -212,7 +213,6 @@ Pré-requisitos:
 - Python 3.8+
 - Bibliotecas: pandas, seaborn, matplotlib, scipy
 
-Opção A - Execução local (recomendado):
   1. Clone o repositório
   2. Crie e ative um ambiente virtual:
      python3 -m venv venv
@@ -223,11 +223,6 @@ Opção A - Execução local (recomendado):
   4. Execute a partir da pasta notebooks/:
      cd notebooks/
      python tech_challenge.py
-
-Opção B - Google Colab:
-  1. Faça upload do repositório ou abra o script diretamente no Colab
-  2. As bibliotecas já vêm instaladas no ambiente do Colab
-  3. Ajuste o caminho do CSV se necessário
 
 Estrutura do repositório:
   /
@@ -250,8 +245,6 @@ Estrutura do repositório:
   operacionais disponíveis antes da pesquisa
 - A base pode não representar todos os perfis de clientes (viés de resposta)
 - Correlação não implica causalidade — os fatores identificados são associações
-- O modelo proposto ainda não foi implementado (próxima fase)
-- Variáveis como csat_internal_score podem ter vazamento de informação
-  (data leakage) se coletadas no mesmo momento que o NPS
+- O modelo proposto ainda não foi implementado (next step)
 
 ================================================================================
