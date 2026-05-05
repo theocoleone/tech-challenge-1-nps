@@ -182,7 +182,7 @@ Estratégia proposta: **modelo preditivo "misto" em duas camadas**
 
 ```bash
 # 1. Clone o repositório
-git clone <url-do-repo>
+git clone https://github.com/theocoleone/tech-challenge-1-nps.git
 
 # 2. Crie e ative um ambiente virtual
 python3 -m venv venv
@@ -208,8 +208,7 @@ python tech_challenge.py
 ├── notebooks/
 │   └── tech_challenge.py                    → Código da análise (EDA completa)
 ├── presentation/
-│   ├── Tech_Challenge_1.pptx               → Slides da apresentação
-│   └── Apresentacao_Tech_Challenge_1.mp4                    → Vídeo da apresentação
+│   └── Tech_Challenge_1.pptx               → Slides da apresentação
 └── docs/
     └── 1IAST - Fase 1 - Tech Challenge.pdf → Enunciado do desafio
 ```
@@ -230,6 +229,4 @@ python tech_challenge.py
 
 [![Assistir apresentação](https://img.youtube.com/vi/Ae6awuAF95c/0.jpg)](https://youtu.be/Ae6awuAF95c)
 
-📁 Os arquivos da apresentação estão em `presentation/`:
-- `Tech_Challenge_1.pptx` — Slides
-- `apresentacao.mp4` — Gravação em vídeo
+📁 Os slides da apresentação estão em `presentation/Tech_Challenge_1.pptx`
